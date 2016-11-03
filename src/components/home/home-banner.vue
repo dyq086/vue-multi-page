@@ -1,8 +1,9 @@
 <template>
-    <div class="home-carousel-container">
+    <div class="home-banner-container">
         <div class="jumbotron jumbotron-fluid">
-            <div class="container">
+            <div class="container banner-container">
                 <h1 class="display-3">{{ msg }}</h1>
+                <img src="../../assets/img/2.jpg" alt="" class="gaki">
             </div>
         </div>
     </div>
@@ -20,7 +21,17 @@
 </script>
 
 <style lang="scss" scoped>
-    .home-carousel-container {
+    .home-banner-container {
         margin: 30px auto;
+    }
+    .banner-container {
+        position: relative;
+
+        .gaki {
+            position: absolute;
+            left: 10px;
+            width: 50px;
+            top: -60px;
+        }
     }
 </style>
