@@ -6,9 +6,9 @@
 
 参考的项目
 
-- [vue-cli 生成的项目结构]: http://vuejs-templates.github.io/webpack/structure.html
+  [vue-cli 生成的项目结构](http://vuejs-templates.github.io/webpack/structure.html)
 
-- [vue-multipage]: https://github.com/MeCKodo/vue-multipage
+  [vue-multipage](https://github.com/MeCKodo/vue-multipage)
 
 ## 使用方法
 
@@ -85,9 +85,9 @@ npm run build
 
  静态资源管理，具体可以查看
 
-- [Handing Static Assets]: http://vuejs-templates.github.io/webpack/static.html
+ [Handing Static Assets](http://vuejs-templates.github.io/webpack/static.html)
 
-### `src/components`	
+### `src/components`
 
 存放组件，包括 通用组件及各业务下的组件
 
