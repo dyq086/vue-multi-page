@@ -76,16 +76,16 @@ npm run build
             |--- order.js
             |--- order.html
 |--- static // 静态资源
-|--- test // 测试文件	
+|--- test // 测试文件目录	
 ```
 
 ------
 
 ## `static/`  和 `src/assets`
 
-静态资源管理，具体可以查看
+ 静态资源管理，具体可以查看
 
-[Handing Static Assets]: http://vuejs-templates.github.io/webpack/static.html
+- [Handing Static Assets]: http://vuejs-templates.github.io/webpack/static.html
 
 ### `src/components`	
 
