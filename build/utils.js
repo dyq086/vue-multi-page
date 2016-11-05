@@ -3,21 +3,21 @@ var config = require('../config')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 /*
-* 返回静态资源路径(不需要被处理的资源)
-* project/static
-* */
-exports.assetsPath = function(_path) {
+ * 返回静态资源路径(不需要被处理的资源)
+ * project/static
+ * */
+exports.assetsPath = function (_path) {
     var assetsSubDirectory = process.env.NODE_ENV === 'production'
         ? config.build.assetsSubDirectory
         : config.dev.assetsSubDirectory
     return path.posix.join(assetsSubDirectory, _path)
 }
 
-exports.cssLoaders = function(options) {
+exports.cssLoaders = function (options) {
     options = options || {}
     // generate loader string to be used with extract text plugin
-    function generateLoaders(loaders) {
-        var sourceLoader = loaders.map(function(loader) {
+    function generateLoaders (loaders) {
+        var sourceLoader = loaders.map(function (loader) {
             var extraParamChar;
 
             if (/\?/.test(loader)) {

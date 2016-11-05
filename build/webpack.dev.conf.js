@@ -9,6 +9,7 @@ Object.keys(baseWebpackConfig.entry).forEach(function (name) {
     baseWebpackConfig.entry[name] = ['./build/dev-client'].concat(baseWebpackConfig.entry[name])
 })
 
+
 var devConf = merge(baseWebpackConfig, {
     module: {
         loaders: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap })

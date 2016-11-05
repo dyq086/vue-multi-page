@@ -5,6 +5,6 @@
 
 const APP_NAME = 'App Name';
 
-export {
+export default {
     APP_NAME
 }

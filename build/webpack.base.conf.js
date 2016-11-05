@@ -22,11 +22,11 @@ var entries = getEntry(srcDir + '/module/**/*.js')
 var autoprefixerConf = autoprefixer({ browsers: ['last 2 versions'] });
 
 // 获取入口文件
-function getEntry(globPath) {
+function getEntry (globPath) {
     var entries = {},
         filename;
 
-    glob.sync(globPath).forEach(function(entry) {
+    glob.sync(globPath).forEach(function (entry) {
         filename = path.basename(entry, path.extname(entry));
         entries[filename] = entry;
     });
@@ -35,10 +35,10 @@ function getEntry(globPath) {
 }
 
 // 生成html
-function createHtml() {
+function createHtml () {
     var r = [], filename, conf;
 
-    glob.sync(srcDir + '/module/**/*.html').forEach(function(filePath) {
+    glob.sync(srcDir + '/module/**/*.html').forEach(function (filePath) {
         filename = path.basename(filePath, path.extname(filePath));
 
         conf = {
@@ -53,7 +53,7 @@ function createHtml() {
             }
         }
 
-        if(filename in entries) {
+        if (filename in entries) {
             conf.inject = 'body';
             conf.chunks = [filename, 'vendor', 'manifest', 'bootstrap']
         }
