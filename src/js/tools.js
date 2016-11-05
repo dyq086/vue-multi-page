@@ -4,7 +4,7 @@
  */
 
 // image load
-const preloadImg = function(path) {
+const preloadImg = function (path) {
     return new Promise((resolve, reject) => {
         let img = new Image();
         img.onload = resolve;
@@ -13,6 +13,6 @@ const preloadImg = function(path) {
     })
 }
 
-export {
+export default{
     preloadImg
 }
